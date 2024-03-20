@@ -150,6 +150,10 @@ nav > a:hover {
   color: var(--color-pop);
 }
 
+.about-container p {
+  text-align: center;
+}
+
 /* Skills */
 .certification-container {
   display: flex;
@@ -174,7 +178,6 @@ nav > a:hover {
   gap: 3rem;
   justify-content: center;
   align-items: flex-start;
-  align-content: space-evenly;
 }
 
 .skills-container h3 {
