@@ -12,13 +12,12 @@ window
 
 const navbar = document.getElementById("nav-container");
 const heroAnchor = document.getElementById("hero-anchor");
-navbar.style.top = heroAnchor.getBoundingClientRect().top + "px";
+navbar.style.top = getTop() + "px";
 navbar.style.position = "fixed";
 
 function scrollHandler() {
   const element = document.getElementById("nav-container");
-  const top = getTop();
-  element.style.top = top + "px";
+  element.style.top = getTop() + "px";
 }
 
 function getTop() {
@@ -42,9 +41,6 @@ function historySequence() {
 
   history.textContent = "".padStart(historySequenceState, ".");
   historyHidden.textContent = "".padStart(3 - historySequenceState, ".");
-
-  console.log("State: " + historySequenceState);
-  console.log("hidden: " + (3 - historySequenceState));
 }
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
