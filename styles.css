@@ -77,7 +77,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: 10px;
 }
 
@@ -152,6 +152,38 @@ nav > a:hover {
 
 .about-container p {
   text-align: center;
+}
+
+/* Experience */
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.company {
+  max-width: 540px;
+  border-left: 1px dotted var(--color-pop);
+  border-right: 1px dotted var(--color-pop);
+  background-color: var(--background-color-secondary);
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 32px;
+}
+
+.company > h3 {
+  text-align: center;
+  padding-top: 15px;
+  border-bottom: 1px dashed var(--color-pop);
+}
+
+.company > p:first-of-type {
+  padding-top: 20px;
+}
+
+.company > p {
+  padding: 0px 20px 20px 20px;
 }
 
 /* Skills */
