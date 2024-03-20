@@ -77,6 +77,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  padding-bottom: 10px;
 }
 
 /* Navbar */
@@ -149,14 +150,40 @@ nav > a:hover {
 }
 
 /* Skills */
-.skills {
+.certification-container {
   display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cert img {
   width: 128px;
   height: 128px;
   margin: 15px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-evenly;
+}
+
+.skills-container h3 {
+  text-align: left;
+}
+
+.skills-container ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 20px;
 }
 
 /*  Contact */
