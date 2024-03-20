@@ -65,6 +65,20 @@ section {
   color: var(--background-color);
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 /* Navbar */
 nav {
   height: var(--nav-height);
@@ -129,30 +143,12 @@ nav > a:hover {
   margin: auto;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 10px 0;
-}
-
-h3 {
-  font-size: 1.5rem;
+/* About */
+#bit {
+  color: var(--color-pop);
 }
 
 /* Skills */
-
-/*  Contact */
-#me {
-  text-decoration: underline;
-}
-
-i:hover {
-  color: var(--color-pop);
-}
 .skills {
   display: flex;
 }
@@ -163,8 +159,42 @@ i:hover {
   margin: 15px;
 }
 
-#bit {
+/*  Contact */
+#me {
+  text-decoration: underline;
+}
+
+i:hover {
   color: var(--color-pop);
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contact-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-container a {
+  all: unset;
+}
+
+.contact-container a:hover {
+  cursor: pointer;
+}
+
+.resume a {
+  display: inline-block;
+  padding: 20px 0;
 }
 
 footer {
