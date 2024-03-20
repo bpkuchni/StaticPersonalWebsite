@@ -1,0 +1,187 @@
+/* Page Wide */
+:root {
+  /* Dark Mode */
+  --background-color: rgb(31, 31, 31);
+  --color: rgb(224, 221, 221);
+  --background-color-secondary: rgb(43, 43, 43);
+  --color-secondary: rgb(214, 212, 212);
+  --color-pop: greenyellow;
+
+  /* Globals */
+  --nav-height: 1.5rem;
+  --max-width: 720px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+  scrollbar-width: none;
+}
+
+.font-one {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-two {
+  font-family: "Encode Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+section {
+  text-wrap: wrap;
+  padding: 50px;
+}
+
+.content-container {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alternate {
+  color: var(--color-secondary);
+  background-color: var(--background-color-secondary);
+}
+
+.pop {
+  color: var(--color-pop);
+}
+
+.hidden {
+  color: var(--background-color);
+}
+
+/* Navbar */
+nav {
+  height: var(--nav-height);
+  border-bottom: 1px solid var(--color-pop);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  animation: scrolled-top 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  max-width: var(--max-width);
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+nav > a:hover {
+  color: var(--color-pop);
+}
+
+#nav-container {
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+/* Hero */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-anchor {
+  height: var(--nav-height);
+}
+
+.hero-padding {
+  height: var(--nav-height);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--max-width);
+}
+
+.hero-image {
+  width: 128px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image-container {
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Skills */
+
+/*  Contact */
+#me {
+  text-decoration: underline;
+}
+
+i:hover {
+  color: var(--color-pop);
+}
+.skills {
+  display: flex;
+}
+
+.cert img {
+  width: 128px;
+  height: 128px;
+  margin: 15px;
+}
+
+#bit {
+  color: var(--color-pop);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 560px) {
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: rgb(224, 221, 221);
+    --color: rgb(31, 31, 31);
+    --background-color-secondary: rgb(214, 212, 212);
+    --color-secondary: rgb(43, 43, 43);
+    --color-pop: dodgerblue;
+  }
+}
