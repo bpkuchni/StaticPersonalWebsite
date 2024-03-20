@@ -15,6 +15,9 @@ const heroAnchor = document.getElementById("hero-anchor");
 navbar.style.top = getTop() + "px";
 navbar.style.position = "fixed";
 
+const heroImage = document.getElementById("heroImage");
+heroImage.onload = scrollHandler;
+
 function scrollHandler() {
   const element = document.getElementById("nav-container");
   element.style.top = getTop() + "px";
